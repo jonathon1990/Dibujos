@@ -18,8 +18,24 @@ private EventBuilder(){
 		{ 
 		 numClicks ++; 
 		 label.setText (“Número de clics de botones: “ + numClicks); 
-		 }*/
+		 }
 	
+	class ItemRadio implements ItemListener{
+	    private MiCanvas canvas;
+	    public ItemRadio(MiCanvas canvas){
+	        this.canvas=canvas;
+	    }
+	    public void itemStateChanged(ItemEvent ev){
+	        String s=(String)ev.getItem();
+	        if(s.equals("Línea")){
+	            canvas.setFigura(Figura.LINEA);
+	        }else if(s.equals("Rectángulo")){
+	            canvas.setFigura(Figura.RECTANGULO);
+	        }else if(s.equals("Elipse")){
+	            canvas.setFigura(Figura.ELIPSE);
+	        }
+	    }
+	}   */
 }
 /**
 * Aqui se deben crear los metodos static
