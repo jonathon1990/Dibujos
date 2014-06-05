@@ -58,5 +58,4 @@ public void setDibujandoTmp(boolean dibujandoTmp) {
 this.dibujandoTmp = dibujandoTmp;
 }
 
-
 }

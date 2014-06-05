@@ -25,10 +25,7 @@ botones = new HashMap<>();
 grupoBtn = new ButtonGroup();
 this.add(btnLimpiar);
 
-JButton btnCirculo = new JButton("CIRCULO");
-botones = new HashMap<>();
-grupoBtn = new ButtonGroup();
-this.add(btnCirculo);
+
 
 JButton btnLinea = new JButton("LINEA");
 botones = new HashMap<>();
@@ -67,6 +64,10 @@ this.add(btnLimpiar);
 
 public JButton getBtnLimpiar() {
 return btnLimpiar;
+}
+
+public void paint(){
+	
 }
 
 }
